@@ -1,0 +1,422 @@
+\section{Формулы}
+
+\begin{equation}\label{eq:formul}
+	l_1\cdot\cos(\phi)+l_2\cdot\cos\left(\arcsin\left(\dfrac{e_1-l_1\cdot\sin(\phi)}{l_2}\right)\right)=x(\phi)
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/1.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+\begin{equation}\label{eq:xc1}
+	l_1\cdot\cos(\phi_n)+l_2\cdot\cos\left(\arcsin\left(\dfrac{e_1-l_1\cdot\sin(\phi_n)}{l_2}\right)\right)=x_{c_1}
+\end{equation}
+
+\begin{multline}\label{eq:xc1calc}
+	0.02\cdot\cos(\pi)+0.035\cdot\cos\left(\arcsin\left(\dfrac{0.25\cdot 0.02-0.02\cdot\sin(\pi)}{0.035}\right)\right)=\\
+	=-0.02+0.035\cdot0.0285714=0.014641=x_{c_1}
+\end{multline}
+
+\begin{equation}\label{eq:yc1}
+	y_{c_1} = 0
+\end{equation}
+
+\begin{equation}\label{eq:xc2}
+	l_1\cdot\cos(\phi_k)+l_2\cdot\cos\left(\arcsin\left(\dfrac{e_1-l_1\cdot\sin(\phi_k)}{l_2}\right)\right)=x_{c_2}
+\end{equation}
+
+\begin{equation}\label{eq:yc2}
+	y_{c_2}=0
+\end{equation}
+\newpage
+Координаты $ A $:
+
+\begin{equation}\label{eq:xA}
+	x_A=l_1\cdot\cos(\phi)
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/6.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+\begin{equation}\label{eq:yA}
+	y_A=l_1\cdot\sin(\phi)
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/7.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+Changed
+\begin{equation}\label{eq:xB}
+	x_B=l_1\cdot\cos(\phi_n)+\sqrt{l_2^{2}-\left(l_1\cdot\sin(\phi_n)-e_1\right)^{2}}=\dfrac{-1+\sqrt{3}}{50}\approx 0.014641
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/xB.dat};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{$ x_B $}
+\end{figure}
+%\newline
+Changed
+\begin{equation}\label{eq:yB}
+	y_B=e_1=0.005
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/yB.dat};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{$ y_B $}
+\end{figure}
+
+\newpage
+Середина первого звена $ OA $:
+TODO
+\begin{equation}\label{eq:xl1}
+	x_{OA}=\dfrac{x_O+x_A}{2}=\dfrac{0 + l_1\cdot\cos(\phi)}{2} = \dfrac{l_1\cdot\cos(\phi)}{2}
+\end{equation}
+TODO
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/8.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+\begin{equation}\label{eq:yl1}
+	y_{OA}=\dfrac{y_O+y_A}{2}=\dfrac{0 + l_1\cdot\sin(\phi)}{2}=\dfrac{l_1\cdot\sin(\phi)}{2}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/9.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+Середина второго звена $ AB $:
+OLD
+\begin{multline}\label{eq:xl2}
+	x_{AB}=\dfrac{l_1\cdot\cos(\phi) + 	l_1\cdot\cos(\phi)+l_2\cdot\cos\left(\arcsin\left(\dfrac{e_1-l_1\cdot\sin(\phi)}{l_2}\right)\right)}{2}=\\
+	=\dfrac{2\cdot l_1\cdot\cos(\phi)+l_2\cdot\cos\left(\arcsin\left(\dfrac{e_1-l_1\cdot\sin(\phi)}{l_2}\right)\right)}{2}
+\end{multline}
+
+NEW
+%\begin{equation}\label{eq:xl2}
+%	x_{AB}=\dfrac{-l_1^{2}\sin(2\phi)+2l_{1}e_{1}\cos(\phi)}{4\sqrt{l_{2}^{2}-l_{1}^{2}\sin^{2}(\phi)+2l_{}}}
+%\end{equation}
+
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/10.dat};
+		\end{axis}
+	\end{tikzpicture}
+		\caption{$ x_{AB} $}
+\end{figure}
+
+%\newpage
+
+\begin{equation}\label{eq:yl2}
+	y_{AB}=\dfrac{y_A+y_{c_1}}{2}=\dfrac{l_1\cdot\sin(\phi) + 0}{2} = \dfrac{l_1\cdot\sin(\phi)}{2}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/11.dat};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{$ y_{AB} $}
+\end{figure}
+\newpage
+Найдём производные $ A $, $OA$, $AB $ по $ \phi $:
+
+\begin{equation}\label{eq:xAdphi}
+	x_A'=-l1\cdot\sin(\phi)
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/12.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+\begin{equation}\label{eq:yAdphi}
+	y_A'=l1\cdot\cos(\phi)
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/13.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+\begin{equation}\label{eq:xOAdphi}
+	x_{OA}'=\dfrac{-l1\cdot\sin(\phi)}{2}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/14.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+\begin{equation}\label{eq:yOAdphi}
+	y_{OA}'=\dfrac{l1\cdot\cos(\phi)}{2}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/15.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+OLD
+\begin{equation}\label{eq:xABdphi}
+	x_{AB}'=-l1\cdot\sin(\phi)+
+	\dfrac{{l_2}^{2}\cdot \left(\dfrac{e_1}{2}-\dfrac{1}{2}\cdot l_2\cdot\sin(\phi) \right)\cdot\cos(\phi)}{4\cdot \sqrt{1-{\left(\dfrac{e_1}{2}-\dfrac{1}{2}\cdot l_2\cdot \sin(\phi) \right)}^{2}}}
+\end{equation}
+
+NEW
+
+\begin{multline}
+x_{AB}(\dfrac{1}{2} \sqrt{l_{2}^{2} - (l_1\sin(x) - e_1)^2} + l_1 \cos(x)) =\\ \frac{1}{2} (-(l_1^2 \cos^2(x))/\sqrt{l_2^2 - (l_1 \sin(x) - e_1)^2} - \dfrac{l_1^2 \cos^2(x) (l_1 \sin(x) - e_1)^2}{(l_2^2 - (l_1 \sin(x) - e_1)^2)^{\frac{3}{2}}} +\\ \dfrac{l_1 \sin(x) (l_1 \sin(x) - e_1)}{\sqrt{l_2^2 - (l_1 \sin(x) - e_1)^2}) - l_1 \cos(x)}
+\end{multline}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/16.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+\begin{equation}\label{eq:yABdphi}
+	y_{AB}'=\dfrac{l_1\cdot\cos(\phi)}{2}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/17.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+Найдём вторые производные:
+
+\begin{equation}\label{eq:xAdphi2}
+	x_A''=-l_1\cdot\cos(\phi)
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/18.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+\begin{equation}\label{eq:yAdphi2}
+	y_A''=-l_1\cdot\sin(\phi)
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/19.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+\begin{equation}\label{eq:xOAdphi2}
+	x_{OA}''=\dfrac{-l_1\cdot\cos(\phi)}{2}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/20.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+\begin{equation}\label{eq:yOAdphi2}
+	y_{OA}''=\dfrac{-l_1\cdot\sin(\phi)}{2}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/21.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage
+\begin{eqnarray}\label{eq:xABdphi2}
+	x_{AB}''=\dfrac{1}{2}\cdot\Bigg(-\dfrac{{l_2}^{3}\cdot\cos^{2}(x)}{4\cdot\sqrt{1-\dfrac{1}{4}\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2}}}-\\
+	-\dfrac{{l_2}^{3}\cdot\cos^{2}(x)\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2} }{16\cdot\left(1-\dfrac{1}{4}\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2}\right)^{\frac{3}{2}}}-\\
+	-\dfrac{{l_2}^{2}\cdot\sin(x)\cdot\left(e_1-l_2\cdot\sin(x)\right)}{4\cdot\sqrt{1-\dfrac{1}{4}\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2}}}-2\cdot l_1\cdot\cos(x)\Bigg)
+\end{eqnarray}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/22.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\newpage	
+%\begin{multline}\label{eq:xABdphi2}
+%	x_{AB}''=\dfrac{1}{2}\cdot\left(
+%	-\dfrac{l_2^{3}\cdot\cos^{2}(x)}{4\cdot\sqrt{1-\dfrac{1}{4}\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2}}}-\\
+%	-\dfrac{l_2^{3}\cdot\cos^{2}(x)\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2} }{16\cdot\left(1-\dfrac{1}{4}\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2}\right)^{\dfrac{3}{2}}}-\\
+%	-\dfrac{l_2^{2}\cdot\sin(x)\cdot\left(e_1-l_2\cdot\sin(x)\right)}{4\cdot\sqrt{1-\dfrac{1}{4}\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2}}}-2\cdot l_1\cdot\cos(x)\right)
+%\end{multline}
+
+\begin{equation}\label{eq:yABdphi2}
+	y_{AB}''=\dfrac{-l_1\cdot\sin(\phi)}{2}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[	
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/25.dat};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
