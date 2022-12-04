@@ -1,5 +1,7 @@
 import numpy as np
 
+"""l3 in equation is equal to e1"""
+
 lambda_2 = 1.75
 lambda_e = 0.25
 phi_k = 10 * np.pi / 9
@@ -67,12 +69,22 @@ def segment_ab_coord_y(phi):
 # Производная координаты х точки A
 def diff_dot_a_coord_x(phi):
     """ok"""
+    """
+    to check 
+    enter: l1cos(x)
+    on: https://mathdf.com/der/ru/
+    """
     return -l_1 * np.sin(phi)
 
 
 # Производная координаты у точки A
 def diff_dot_a_coord_y(phi):
     """ok"""
+    """
+    to check
+    enter: l1sin(x)
+    on: https://mathdf.com/der/ru/
+    """
     return l_1 * np.cos(phi)
 
 
@@ -92,18 +104,33 @@ def diff_dot_b_coord_x(phi):
 # Производная координаты у точки B
 def diff_dot_b_coord_y(phi):
     """ok"""
+    """
+    to check
+    enter: l3
+    on: https://mathdf.com/der/ru/
+    """
     return 0
 
 
 # Производная координаты х отрезка ОA
 def diff_segment_oa_coord_x(phi):
     """ok"""
+    """
+    to check
+    enter: l1cosx/2
+    on: https://mathdf.com/der/ru/
+    """
     return -l_1 * np.sin(phi) / 2
 
 
 # Производная координаты y отрезка OA
 def diff_segment_oa_coord_y(phi):
     """ok"""
+    """
+    to check
+    enter: l1sinx/2
+    on: https://mathdf.com/der/ru/
+    """
     return l_1 * np.cos(phi) / 2
 
 
@@ -123,6 +150,11 @@ def diff_segment_ab_coord_x(phi):
 # Производная координаты y отрезка AB
 def diff_segment_ab_coord_y(phi):
     """ok"""
+    """
+    to check
+    enter:  (l1sin(x) + l3) / 2
+    on: https://mathdf.com/der/ru/
+    """
     return l_1 * np.cos(phi) / 2
 
 
@@ -133,12 +165,22 @@ def diff_segment_ab_coord_y(phi):
 # Вторая производная координаты х точки А
 def diff2_dot_a_coord_x(phi):
     """ok"""
+    """
+    to check
+    enter: -l1sin(x)
+    on: https://mathdf.com/der/ru/
+    """
     return -l_1 * np.cos(phi)
 
 
 # Вторая производная координаты у точки А
 def diff2_dot_a_coord_y(phi):
     """ok"""
+    """
+    to check
+    enter: l1cos(x)
+    on: https://mathdf.com/der/ru/
+    """
     return -l_1 * np.sin(phi)
 
 
@@ -158,18 +200,33 @@ def diff2_dot_b_coord_x(phi):
 # Вторая производная координаты у точки B
 def diff2_dot_b_coord_y(phi):
     """ok"""
+    """
+    to check
+    enter: 0
+    on: https://mathdf.com/der/ru/
+    """
     return 0
 
 
 # Вторая производная координаты х отрезка ОА
 def diff2_segment_oa_coord_x(phi):
     """ok"""
+    """
+    to check
+    enter: -l1sin(x)/2
+    on: https://mathdf.com/der/ru/
+    """
     return -l_1 * np.cos(phi) / 2
 
 
 # Вторая производная координаты у отрезка ОА
 def diff2_segment_oa_coord_y(phi):
     """ok"""
+    """
+    to check
+    enter: -l1cos(x)/2
+    on: https://mathdf.com/der/ru/
+    """
     return -l_1 * np.sin(phi) / 2
 
 
@@ -186,6 +243,11 @@ def diff2_segment_ab_coord_x(phi):
     #         - 2 * l_1 * np.cos(phi)
     # )
     """ok var: new"""
+    """
+    to check
+    enter: -l1cos(x) * (l1 * sinx - l3) / (2 * sqrt(l2 ** 2 - (l1 * sinx - l3) ** 2)) - l1 * sinx
+    on: https://mathdf.com/der/ru/
+    """
     return - l_1 * ((l_1 * np.cos(phi) ** 2 - np.sin(phi) * (l_1 * np.sin(phi) - e_1)) * np.sqrt(
         l_2 ** 2 - (l_1 * np.sin(phi) - e_1) ** 2) + l_1 * np.cos(phi) ** 2 * (l_1 * np.sin(phi) - e_1) ** 2 / np.sqrt(
         l_2 ** 2 - (l_1 * np.sin(phi) - e_1) ** 2)) / (2 * (l_2 ** 2 - (l_1 * np.sin(phi) - e_1) ** 2)) - l_1 * np.cos(
@@ -194,6 +256,12 @@ def diff2_segment_ab_coord_x(phi):
 
 # Вторая производная координаты у отрезка AB
 def diff2_segment_ab_coord_y(phi):
+    """ok"""
+    """
+    to check
+    enter: l1 * cos(x) / 2
+    on: https://mathdf.com/der/ru/
+    """
     return -l_1 * np.sin(phi) / 2
 
 
