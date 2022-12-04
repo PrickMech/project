@@ -3,19 +3,19 @@
 \begin{equation}\label{eq:formul}
 	l_1\cdot\cos(\phi)+l_2\cdot\cos\left(\arcsin\left(\dfrac{e_1-l_1\cdot\sin(\phi)}{l_2}\right)\right)=x(\phi)
 \end{equation}
-
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			grid = major,
-			axis equal image = false,
-			width=16.5cm,
-			]
-			\addplot plot table {new_graphs/graphs/1.dat};
-		\end{axis}
-	\end{tikzpicture}
-\end{figure}
+TODO: разобраться, как называется этот график в питоне и техе
+%\begin{figure}[H]
+%	\centering
+%	\begin{tikzpicture}
+%		\begin{axis}[
+%			grid = major,
+%			axis equal image = false,
+%			width=16.5cm,
+%			]
+%			\addplot plot table {new_graphs/graphs/1.dat};
+%		\end{axis}
+%	\end{tikzpicture}
+%\end{figure}
 \newpage
 \begin{equation}\label{eq:xc1}
 	l_1\cdot\cos(\phi_n)+l_2\cdot\cos\left(\arcsin\left(\dfrac{e_1-l_1\cdot\sin(\phi_n)}{l_2}\right)\right)=x_{c_1}
@@ -52,9 +52,10 @@
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/6.dat};
+			\addplot plot table {new\_graphs/graphs/dot\_a\_coord\_x.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ x_A $}
 \end{figure}
 \newpage
 \begin{equation}\label{eq:yA}
@@ -69,9 +70,10 @@
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/7.dat};
+			\addplot plot table {new_graphs/graphs/dot_a_coord_y.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ y_A $}
 \end{figure}
 \newpage
 Changed
@@ -87,7 +89,7 @@ Changed
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/xB.dat};
+			\addplot plot table {new_graphs/graphs/dot_b_coord_x.dat};
 		\end{axis}
 	\end{tikzpicture}
 	\caption{$ x_B $}
@@ -106,7 +108,7 @@ Changed
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/yB.dat};
+			\addplot plot table {new_graphs/graphs/dot_b_coord_y.dat};
 		\end{axis}
 	\end{tikzpicture}
 	\caption{$ y_B $}
@@ -127,9 +129,10 @@ TODO
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/8.dat};
+			\addplot plot table {new_graphs/graphs/segment_oa_coord_x.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ x_{OA} $}
 \end{figure}
 \newpage
 \begin{equation}\label{eq:yl1}
@@ -144,9 +147,10 @@ TODO
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/9.dat};
+			\addplot plot table {new_graphs/graphs/segment_oa_coord_y.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ y_{OA} $}
 \end{figure}
 \newpage
 Середина второго звена $ AB $:
@@ -170,7 +174,7 @@ NEW
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/10.dat};
+			\addplot plot table {new_graphs/graphs/segment_ab_coord_x.dat};
 		\end{axis}
 	\end{tikzpicture}
 		\caption{$ x_{AB} $}
@@ -190,7 +194,7 @@ NEW
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/11.dat};
+			\addplot plot table {new_graphs/graphs/segmant_ab_coord_y.dat};
 		\end{axis}
 	\end{tikzpicture}
 	\caption{$ y_{AB} $}
@@ -210,9 +214,10 @@ NEW
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/12.dat};
+			\addplot plot table {new_graphs/graphs/diff_dot_a_coord_x.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ x_A' $}
 \end{figure}
 \newpage
 \begin{equation}\label{eq:yAdphi}
@@ -227,9 +232,10 @@ NEW
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/13.dat};
+			\addplot plot table {new_graphs/graphs/diff_dot_a_coord_y.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ y_A' $}
 \end{figure}
 \newpage
 \begin{equation}\label{eq:xOAdphi}
@@ -244,9 +250,10 @@ NEW
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/14.dat};
+			\addplot plot table {new_graphs/graphs/diff_segment_oa_coord_x.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ x_{OA}' $}
 \end{figure}
 \newpage
 \begin{equation}\label{eq:yOAdphi}
@@ -261,9 +268,10 @@ NEW
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/15.dat};
+			\addplot plot table {new_graphs/graphs/diff_segment_oa_coord_y.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ y_{OA}' $}
 \end{figure}
 \newpage
 OLD
@@ -286,9 +294,10 @@ x_{AB}(\dfrac{1}{2} \sqrt{l_{2}^{2} - (l_1\sin(x) - e_1)^2} + l_1 \cos(x)) =\\ \
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/16.dat};
+			\addplot plot table {new_graphs/graphs/diff_segment_ab_coord_x.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ x_{AB} $}
 \end{figure}
 \newpage
 \begin{equation}\label{eq:yABdphi}
@@ -303,9 +312,10 @@ x_{AB}(\dfrac{1}{2} \sqrt{l_{2}^{2} - (l_1\sin(x) - e_1)^2} + l_1 \cos(x)) =\\ \
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/17.dat};
+			\addplot plot table {new_graphs/graphs/diff_segment_ab_coord_y.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ y_{AB}' $}
 \end{figure}
 \newpage
 Найдём вторые производные:
@@ -322,9 +332,10 @@ x_{AB}(\dfrac{1}{2} \sqrt{l_{2}^{2} - (l_1\sin(x) - e_1)^2} + l_1 \cos(x)) =\\ \
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/18.dat};
+			\addplot plot table {new_graphs/graphs/diff2_dot_a_coord_x.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ x_A'' $}
 \end{figure}
 \newpage
 \begin{equation}\label{eq:yAdphi2}
@@ -339,9 +350,10 @@ x_{AB}(\dfrac{1}{2} \sqrt{l_{2}^{2} - (l_1\sin(x) - e_1)^2} + l_1 \cos(x)) =\\ \
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/19.dat};
+			\addplot plot table {new_graphs/graphs/diff2_dot_a_coord_y.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ y_A'' $}
 \end{figure}
 \newpage
 \begin{equation}\label{eq:xOAdphi2}
@@ -356,9 +368,10 @@ x_{AB}(\dfrac{1}{2} \sqrt{l_{2}^{2} - (l_1\sin(x) - e_1)^2} + l_1 \cos(x)) =\\ \
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/20.dat};
+			\addplot plot table {new_graphs/graphs/diff2_segment_oa_coord_x.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ x_{OA}'' $}
 \end{figure}
 \newpage
 \begin{equation}\label{eq:yOAdphi2}
@@ -373,9 +386,10 @@ x_{AB}(\dfrac{1}{2} \sqrt{l_{2}^{2} - (l_1\sin(x) - e_1)^2} + l_1 \cos(x)) =\\ \
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/21.dat};
+			\addplot plot table {new_graphs/graphs/diff2_segment_oa_coord_y.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ y_{OA}'' $}
 \end{figure}
 \newpage
 \begin{eqnarray}\label{eq:xABdphi2}
@@ -392,9 +406,10 @@ x_{AB}(\dfrac{1}{2} \sqrt{l_{2}^{2} - (l_1\sin(x) - e_1)^2} + l_1 \cos(x)) =\\ \
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/22.dat};
+			\addplot plot table {new_graphs/graphs/diff2_segment_ab_coord_x.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ x_{AB}'' $}
 \end{figure}
 \newpage	
 %\begin{multline}\label{eq:xABdphi2}
@@ -416,7 +431,8 @@ x_{AB}(\dfrac{1}{2} \sqrt{l_{2}^{2} - (l_1\sin(x) - e_1)^2} + l_1 \cos(x)) =\\ \
 			axis equal image = false,
 			width=16.5cm,
 			]
-			\addplot plot table {new_graphs/graphs/25.dat};
+			\addplot plot table {new_graphs/graphs/diff2_segmeng_ab_coord_y.dat};
 		\end{axis}
 	\end{tikzpicture}
+	\caption{$ y_{AB}'' $}
 \end{figure}

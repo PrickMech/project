@@ -20,7 +20,7 @@ right_bound = np.pi
 x_for_plotting = np.linspace(left_bound, right_bound, 100)
 
 for func in list_of_functions:
-    graph = open(f'../graphs/new_graphs/{func.__name__}', 'w')
+    graph = open(f'../graphs/new_graphs/{func.__name__}.dat', 'w')
     for phi in x_for_plotting:
         graph.write(str(phi) + ' ' + str(func(phi)) + '\n')
     graph.close()
