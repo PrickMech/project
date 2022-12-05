@@ -306,11 +306,165 @@ diff
 	\caption{График зависимости производной координаты y отрезка AB от угла $\phi$}
 \end{figure}
 \newpage
-----------------------------------
+
+diff2
+
+\begin{equation}\label{eq:xAdphi2}
+	A_x''=-l_1\cdot\cos(\phi)
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/new_graphs/diff2_dot_a_coord_x.dat};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{График зависимости второй производной координаты x точки A от угла $\phi$}
+\end{figure}
+\newpage
+
+\begin{equation}\label{eq:yAdphi2}
+	A_y''=-l_1\cdot\sin(\phi)
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/new_graphs/diff2_dot_a_coord_y.dat};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{График зависимости второй производной координаты y точки A от угла $\phi$}
+\end{figure}
+\newpage
+
+\begin{eqnarray}\label{eq:xBdphi2}
+	B_x''= \dfrac{-l_1\cdot(l_1\cdot\cos(\phi)^2 - \sin(\phi)\cdot (l_1\cdot\sin(\phi) - e_1))\cdot \sqrt{l_2^2 - (l_1\cdot\sin(\phi) - e_1)^2}}{} + \nonumber \\ + \dfrac{\dfrac{l_1\cdot\cos(\phi)^2\cdot(l_1\cdot\sin(\phi)-e_1)^2}{\sqrt{l_2^2 - (l_1\cdot \sin(\phi) - e_1)^2}}}{l_2^2 - (l_1\cdot \sin(\phi) - e_1)^2} - l_1\cdot\cos(\phi)
+\end{eqnarray}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/new_graphs/diff2_dot_b_coord_x.dat};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{График зависимости второй производной координаты x точки B от угла $\phi$}
+\end{figure}
+\newpage
+
+\begin{equation}\label{eq:yBdphi2}
+	B_y''= 0
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/new_graphs/diff2_dot_b_coord_y.dat};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{График зависимости второй производной координаты y точки B от угла $\phi$}
+\end{figure}
+\newpage
+
+\begin{equation}\label{eq:xOAdphi2}
+	OA_x''=\dfrac{-l_1\cdot\cos(\phi)}{2}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/new_graphs/diff2_segment_oa_coord_x.dat};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{График зависимости второй производной координаты x отрезка OA от угла $\phi$}
+\end{figure}
+\newpage
+\begin{equation}\label{eq:yOAdphi2}
+	OA_y''=\dfrac{-l_1\cdot\sin(\phi)}{2}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/new_graphs/diff2_segment_oa_coord_y.dat};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{График зависимости второй производной координаты y отрезка OA от угла $\phi$}
+\end{figure}
+\newpage
+
+\begin{eqnarray}\label{eq:xABdphi2}
+	AB_x''= \dfrac{-l_1\cdot(l_1\cdot\cos(\phi)^2 - \sin(\phi)\cdot(l_1\cdot\sin(\phi) - e_1))\cdot \sqrt{
+	l_2^2 - (l_1\cdot\sin(\phi) - e_1)^2}}{} + \nonumber \\ + \dfrac{\dfrac{l_1\cdot\cos(\phi)^2\cdot(l_1\cdot\sin(\phi) - e_1)^2}{\sqrt{
+	l_2^2 - (l_1\cdot\sin(\phi) - e_1)^2})}} {2\cdot(l_2^2 - (l_1\cdot\sin(\phi) - e_1)^2)} - l_1\cdot\cos(\phi)
+\end{eqnarray}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/new_graphs/diff2_segment_ab_coord_x.dat};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{График зависимости второй производной координаты x отрезка AB от угла $\phi$}
+\end{figure}
+\newpage	
+
+\begin{equation}\label{eq:yABdphi2}
+	AB_y''=\dfrac{-l_1\cdot\sin(\phi)}{2}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[	
+			grid = major,
+			axis equal image = false,
+			width=16.5cm,
+			]
+			\addplot plot table {graphs/new_graphs/diff2_segment_ab_coord_y.dat};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{График зависимости второй производной координаты y отрезка AB от угла $\phi$}
+\end{figure}
+\newpage
 
 
-
-
+--------------------------------------------------------------------------------------
+OLD
 
 
 \begin{equation}\label{eq:formul}
@@ -365,63 +519,6 @@ OLD
 
 %\newpage
 
-\begin{equation}\label{eq:yl2}
-	y_{AB}=\dfrac{y_A+y_{c_1}}{2}=\dfrac{l_1\cdot\sin(\phi) + 0}{2} = \dfrac{l_1\cdot\sin(\phi)}{2}
-\end{equation}
-
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			grid = major,
-			axis equal image = false,
-			width=16.5cm,
-			]
-			\addplot plot table {graphs/new_graphs/segment_ab_coord_y.dat};
-		\end{axis}
-	\end{tikzpicture}
-	\caption{$ y_{AB} $}
-\end{figure}
-\newpage
-Найдём производные $ A $, $OA$, $AB $ по $ \phi $:
-
-\begin{equation}\label{eq:xAdphi}
-	x_A'=-l1\cdot\sin(\phi)
-\end{equation}
-
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			grid = major,
-			axis equal image = false,
-			width=16.5cm,
-			]
-			\addplot plot table {graphs/new_graphs/diff_dot_a_coord_x.dat};
-		\end{axis}
-	\end{tikzpicture}
-	\caption{$ x_A' $}
-\end{figure}
-\newpage
-\begin{equation}\label{eq:yAdphi}
-	y_A'=l1\cdot\cos(\phi)
-\end{equation}
-
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			grid = major,
-			axis equal image = false,
-			width=16.5cm,
-			]
-			\addplot plot table {graphs/new_graphs/diff_dot_a_coord_y.dat};
-		\end{axis}
-	\end{tikzpicture}
-	\caption{$ y_A' $}
-\end{figure}
-\newpage
-
 OLD
 \begin{equation}\label{eq:xABdphi}
 	x_{AB}'=-l1\cdot\sin(\phi)+
@@ -434,153 +531,22 @@ NEW
 x_{AB}(\dfrac{1}{2} \sqrt{l_{2}^{2} - (l_1\sin(x) - e_1)^2} + l_1 \cos(x)) =\\ \frac{1}{2} (-(l_1^2 \cos^2(x))/\sqrt{l_2^2 - (l_1 \sin(x) - e_1)^2} - \dfrac{l_1^2 \cos^2(x) (l_1 \sin(x) - e_1)^2}{(l_2^2 - (l_1 \sin(x) - e_1)^2)^{\frac{3}{2}}} +\\ \dfrac{l_1 \sin(x) (l_1 \sin(x) - e_1)}{\sqrt{l_2^2 - (l_1 \sin(x) - e_1)^2}) - l_1 \cos(x)}
 \end{multline}
 
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			grid = major,
-			axis equal image = false,
-			width=16.5cm,
-			]
-			\addplot plot table {graphs/new_graphs/diff_segment_ab_coord_x.dat};
-		\end{axis}
-	\end{tikzpicture}
-	\caption{$ x_{AB} $}
-\end{figure}
 \newpage
 \begin{equation}\label{eq:yABdphi}
 	y_{AB}'=\dfrac{l_1\cdot\cos(\phi)}{2}
 \end{equation}
 
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			grid = major,
-			axis equal image = false,
-			width=16.5cm,
-			]
-			\addplot plot table {graphs/new_graphs/diff_segment_ab_coord_y.dat};
-		\end{axis}
-	\end{tikzpicture}
-	\caption{$ y_{AB}' $}
-\end{figure}
-\newpage
 Найдём вторые производные:
 
-\begin{equation}\label{eq:xAdphi2}
-	x_A''=-l_1\cdot\cos(\phi)
-\end{equation}
-
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			grid = major,
-			axis equal image = false,
-			width=16.5cm,
-			]
-			\addplot plot table {graphs/new_graphs/diff2_dot_a_coord_x.dat};
-		\end{axis}
-	\end{tikzpicture}
-	\caption{$ x_A'' $}
-\end{figure}
-\newpage
-\begin{equation}\label{eq:yAdphi2}
-	y_A''=-l_1\cdot\sin(\phi)
-\end{equation}
-
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			grid = major,
-			axis equal image = false,
-			width=16.5cm,
-			]
-			\addplot plot table {graphs/new_graphs/diff2_dot_a_coord_y.dat};
-		\end{axis}
-	\end{tikzpicture}
-	\caption{$ y_A'' $}
-\end{figure}
-\newpage
-\begin{equation}\label{eq:xOAdphi2}
-	x_{OA}''=\dfrac{-l_1\cdot\cos(\phi)}{2}
-\end{equation}
-
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			grid = major,
-			axis equal image = false,
-			width=16.5cm,
-			]
-			\addplot plot table {graphs/new_graphs/diff2_segment_oa_coord_x.dat};
-		\end{axis}
-	\end{tikzpicture}
-	\caption{$ x_{OA}'' $}
-\end{figure}
-\newpage
-\begin{equation}\label{eq:yOAdphi2}
-	y_{OA}''=\dfrac{-l_1\cdot\sin(\phi)}{2}
-\end{equation}
-
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			grid = major,
-			axis equal image = false,
-			width=16.5cm,
-			]
-			\addplot plot table {graphs/new_graphs/diff2_segment_oa_coord_y.dat};
-		\end{axis}
-	\end{tikzpicture}
-	\caption{$ y_{OA}'' $}
-\end{figure}
-\newpage
 \begin{eqnarray}\label{eq:xABdphi2}
 	x_{AB}''=\dfrac{1}{2}\cdot\Bigg(-\dfrac{{l_2}^{3}\cdot\cos^{2}(x)}{4\cdot\sqrt{1-\dfrac{1}{4}\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2}}}-\\
 	-\dfrac{{l_2}^{3}\cdot\cos^{2}(x)\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2} }{16\cdot\left(1-\dfrac{1}{4}\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2}\right)^{\frac{3}{2}}}-\\
 	-\dfrac{{l_2}^{2}\cdot\sin(x)\cdot\left(e_1-l_2\cdot\sin(x)\right)}{4\cdot\sqrt{1-\dfrac{1}{4}\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2}}}-2\cdot l_1\cdot\cos(x)\Bigg)
 \end{eqnarray}
 
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			grid = major,
-			axis equal image = false,
-			width=16.5cm,
-			]
-			\addplot plot table {graphs/new_graphs/diff2_segment_ab_coord_x.dat};
-		\end{axis}
-	\end{tikzpicture}
-	\caption{$ x_{AB}'' $}
-\end{figure}
-\newpage	
 %\begin{multline}\label{eq:xABdphi2}
 %	x_{AB}''=\dfrac{1}{2}\cdot\left(
 %	-\dfrac{l_2^{3}\cdot\cos^{2}(x)}{4\cdot\sqrt{1-\dfrac{1}{4}\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2}}}-\\
 %	-\dfrac{l_2^{3}\cdot\cos^{2}(x)\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2} }{16\cdot\left(1-\dfrac{1}{4}\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2}\right)^{\dfrac{3}{2}}}-\\
 %	-\dfrac{l_2^{2}\cdot\sin(x)\cdot\left(e_1-l_2\cdot\sin(x)\right)}{4\cdot\sqrt{1-\dfrac{1}{4}\cdot\left(e_1-l_2\cdot\sin(x)\right)^{2}}}-2\cdot l_1\cdot\cos(x)\right)
 %\end{multline}
-
-\begin{equation}\label{eq:yABdphi2}
-	y_{AB}''=\dfrac{-l_1\cdot\sin(\phi)}{2}
-\end{equation}
-
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[	
-			grid = major,
-			axis equal image = false,
-			width=16.5cm,
-			]
-			\addplot plot table {graphs/new_graphs/diff2_segment_ab_coord_y.dat};
-		\end{axis}
-	\end{tikzpicture}
-	\caption{$ y_{AB}'' $}
-\end{figure}
