@@ -1,5 +1,6 @@
 import numpy as np
 import time
+import matplotlib.pyplot as plt
 
 from kinematic import list_of_functions
 
@@ -23,8 +24,8 @@ e_1 = lambda_e * l_1
 
 start = time.time()
 
-left_bound = - np.pi
-right_bound = np.pi
+left_bound = 0
+right_bound = 2 * np.pi
 
 x_for_plotting = np.linspace(left_bound, right_bound, 100)
 
@@ -33,5 +34,8 @@ for func in list_of_functions:
     for phi in x_for_plotting:
         graph.write(str(phi) + ' ' + str(func(phi)) + '\n')
     graph.close()
+    # plt.plot(x_for_plotting, [func(x) for x in x_for_plotting])
+    # plt.grid()
+    # plt.show()
 
 print(f"Время работы: {time.time() - start}")
